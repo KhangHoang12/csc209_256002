@@ -76,4 +76,12 @@
         </java>
     </target>
     <!-- END OF LECTURE 01 -->
+    <!-- LECTURE 02 -->
+    <target name="lect02.VectorClient">
+        <java classname="co.kulwadee.csc209.lect02.VectorClient" 
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <!-- END OF LECTURE 02 -->
 </project>
