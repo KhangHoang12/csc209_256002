@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="build" name="csc209">
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <path id="csc209.classpath">
+        <pathelement location="bin"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" 
+            destdir="bin" includeantruntime="false" 
+            source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="csc209.classpath"/>
+        </javac>
+    </target>
+    <!--- Lecture 01 -->
+    <target name="lect01.AccountTest">
+        <java classname="co.kulwadee.csc209.lect01.AccountTest" 
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <target name="lect01.AccountInfClient">
+        <java classname="co.kulwadee.csc209.lect01.AccountInfClient" 
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <target name="lect01.Charge">
+        <java classname="co.kulwadee.csc209.lect01.Charge" 
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+            <arg value="1.0"/>
+            <arg value="3.5"/>
+        </java>
+    </target>
+    <target name="lect01.ComplexClient">
+        <java classname="co.kulwadee.csc209.lect01.ComplexClient" 
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <target name="lect01.StringClient1">
+        <java classname="co.kulwadee.csc209.lect01.StringClient1" 
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <target name="lect01.StringClient2">
+        <java classname="co.kulwadee.csc209.lect01.StringClient2" 
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <target name="lect01.VectorClient">
+        <java classname="co.kulwadee.csc209.lect01.VectorClient" 
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <!-- END OF LECTURE 01 -->
+</project>
