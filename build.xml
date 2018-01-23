@@ -83,5 +83,53 @@
             <classpath refid="csc209.classpath"/>
         </java>
     </target>
+    <target name="lect02.PlanetSortTest">
+        <java classname="co.kulwadee.csc209.lect02.PlanetSortTest" 
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <target name="lect02.PlanetSortByDist">
+        <java classname="co.kulwadee.csc209.lect02.PlanetSortByDist" 
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <target name="lect02.BoxClient">
+        <java classname="co.kulwadee.csc209.lect02.BoxClient" 
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <target name="lect02.GBoxClient">
+        <java classname="co.kulwadee.csc209.lect02.GBoxClient" 
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <target name="lect02.PairClient1">
+        <java classname="co.kulwadee.csc209.lect02.PairClient1" 
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <target name="lect02.PairClient2">
+        <java classname="co.kulwadee.csc209.lect02.PairClient2" 
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <target name="lect02.PairClient3">
+        <java classname="co.kulwadee.csc209.lect02.PairClient3" 
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <target name="lect02.ListClient">
+        <java classname="co.kulwadee.csc209.lect02.ListClient" 
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
     <!-- END OF LECTURE 02 -->
 </project>

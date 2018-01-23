@@ -56,7 +56,8 @@ $ ant lect01.StringClient1
 ## Topics and List of Sample Programs
 ##############################################################################
 
-17.01.2018 Lecture 1: classes and interfaces
+## 17.01.2018 
+## Lecture 1: classes and interfaces
 
 lect01.AccountTest 
 lect01.AccountInfClient
@@ -65,4 +66,25 @@ lect01.ComplexClient
 lect01.StringClient1
 lect01.StringClient2  
 lect01.VectorClient
+
+
+## 24.01.2018 
+## Lecture 2: interfaces, generics, jcf
+
+### solution for practice exercise
+lect02.VectorClient
+
+### interface 
+lect02.PlanetSortTest
+lect02.PlanetSortByDist
+
+### generics
+lect02.BoxClient
+lect02.GBoxClient
+lect02.PairClient1
+lect02.PairClient2
+lect02.PairClient3
+
+### java collection framework
+lect02.ListClient
 
