@@ -1,7 +1,15 @@
+##############################################################################
 # This repository contains example Java programs for 
 # CSC 209 Data Structures 
 # 
+# The sample program were taken from the following sources.
+#
+# Algorithms 4ed (Sedgewick & Wayne): https://algs4.cs.princeton.edu/home/
+#
+# Core Java (Horstmann): http://www.horstmann.com/corejava.html
+#
+##############################################################################
 
-Topics
+# Topics
 
-lecture 1: classes and interfaces
+17.01.2018 Lecture 1: classes and interfaces
