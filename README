@@ -10,6 +10,59 @@
 #
 ##############################################################################
 
-# Topics
+## Obtaining the source code
+1. Install Git on your computer. 
+   Here is a tutorial teaching how to install Git: 
+   https://www.atlassian.com/git/tutorials/install-git
+
+2. Clone the repository with a command:
+   $ git clone https://github.com/kulwadeesom/csc209_256002
+
+3. To get new sample programs, use the following command:
+   $ git pull  
+
+4. Enjoy!
+
+See: https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud 
+for a Git tutorial.
+
+## Building Programs
+You are encouraged to use Java IDE (such as Eclipse, NetBeans, and IntelliJ IDEA) 
+to develop and build your programs. 
+
+Even so, I have found that it is sometimes more convenient to use a plain 
+text-based editor (e.g. vi, Emacs) to work on my program. 
+
+In the case that you are, like me, happy with using text-based interface.
+I have prepared an Ant build file for you (build.xml). 
+
+Here is how to use Ant I use Ant to build sample programs.
+1. Clean the project workspace
+$ ant clean
+
+2. Build all programs
+$ ant build
+
+3. Run a program
+$ ant <PROGRAM_TARGET_NAME>
+
+Note that, you have to replace <PROGRAM_TARGET_NAME> with the target name of the 
+sample program that you would like to execute. For example, to execute the 
+StringClient1 sample program of lecture #1, just type:
+
+$ ant lect01.StringClient1
+
+##############################################################################
+## Topics and List of Sample Programs
+##############################################################################
 
 17.01.2018 Lecture 1: classes and interfaces
+
+lect01.AccountTest 
+lect01.AccountInfClient
+lect01.Charge
+lect01.ComplexClient
+lect01.StringClient1
+lect01.StringClient2  
+lect01.VectorClient
+
