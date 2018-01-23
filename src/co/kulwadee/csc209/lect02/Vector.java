@@ -1,5 +1,8 @@
-package co.kulwadee.csc209.lect01;
+package co.kulwadee.csc209.lect02;
 
+/**
+ * Solution for the Vector class in lecture 1
+ */
 public class Vector {
     // instance variables
     private int N;
@@ -46,8 +49,10 @@ public class Vector {
      */
     public Vector minus(Vector b) {
         /* INSERT YOUR CODE HERE */
-
-        return null;
+        double[] c = new double[N];
+        for (int i = 0; i < N; i++)
+            c[i] = coords[i] - b.coords[i];
+        return new Vector(c);
         /* INSERT YOUR CODE HERE */
     }
 
@@ -67,7 +72,7 @@ public class Vector {
     /**
      * Returns the dot product of this vector and b.
      * https://en.wikipedia.org/wiki/Dot_product
-     *
+     * a . b = a1 * b1 + a2 * b2 + ... + aN * bN
      * @param b another vector.
      *
      * @return the vector this dot b
@@ -75,7 +80,9 @@ public class Vector {
     public double dot(Vector b) {
         double dotProd = 0.0;
         /* INSERT YOUR CODE HERE */
-
+        for (int i = 0; i < N; i++) {
+            dotProd += coords[i] * b.coords[i];
+        }
         /* INSERT YOUR CODE HERE */
         return dotProd;
     }

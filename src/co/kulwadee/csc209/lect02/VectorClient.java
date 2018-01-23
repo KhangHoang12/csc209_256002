@@ -1,4 +1,4 @@
-package co.kulwadee.csc209.lect01;
+package co.kulwadee.csc209.lect02;
 
 public class VectorClient {
     public static void main(String[] args) {
