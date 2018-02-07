@@ -88,3 +88,9 @@ lect02.PairClient3
 ### java collection framework
 lect02.ListClient
 
+## 07.02.2018
+## Lecture 3: algorithm analysis
+
+lect03.JCFListPerformance
+lect03.SelectionSort
+
