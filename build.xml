@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project basedir="." default="build" name="csc209">
+    <property name="junit.output.dir" value="junit"/>
     <property name="target" value="1.8"/>
     <property name="source" value="1.8"/>
     <property name="debuglevel" value="source,lines,vars"/>
     <path id="csc209.classpath">
         <pathelement location="bin"/>
+        <pathelement location="lib/junit-4.12.jar"/>
+        <pathelement location="lib/hamcrest-core-1.3.jar"/>
+        <pathelement location="lib/hamcrest-library-1.3.jar"/>
     </path>
     <target name="init">
         <mkdir dir="bin"/>
@@ -132,4 +136,18 @@
         </java>
     </target>
     <!-- END OF LECTURE 02 -->
+    <!-- LECTURE 03 -->
+    <target name="lect03.SelectionSort">
+        <java classname="co.kulwadee.csc209.lect03.SelectionSort" 
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <target name="lect03.JCFListPerformance">
+        <java classname="co.kulwadee.csc209.lect03.JCFListPerformance" 
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <!-- END OF LECTURE 03 -->
 </project>
