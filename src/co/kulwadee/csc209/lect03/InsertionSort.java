@@ -1,38 +1,21 @@
 package co.kulwadee.csc209.lect03;
 import java.text.DecimalFormat;
 
-public class SelectionSort {
-    /**
-     * Swaps the elements at index i and j.
-     */
-    public static void swapElements(int[] array, int i, int j) {
-        int temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
-    }
-
-    /**
-     * Finds the index of the lowest value
-     * starting from the index at start (inclusive)
-     * and going to the end of the array.
-     */
-    public static int indexLowest(int[] array, int start) {
-        int lowIndex = start;
-        for (int i = start; i < array.length; i++) {
-            if (array[i] < array[lowIndex]) {
-                lowIndex = i;
-            }
-        }
-        return lowIndex;
-    }
+public class InsertionSort {
 
     /**
      * Sorts the elements (in place) using selection sort.
      */
-    public static void selectionSort(int[] array) {
-        for (int i = 0; i < array.length; i++) {  
-            int j = indexLowest(array, i);        // n + n-1 + n-2 + .. + 1 = n(n+1)/2
-            swapElements(array, i, j);            // n 
+    public static void insertionSort(int[] array) {
+        int i, j, key;
+        for (j = 1; j < array.length; j++) {
+            key = array[j];
+            i = j - 1;
+            while (i >= 0 && array[i] > key) {
+                array[i+1] = array[i];
+                i = i - 1;
+            }
+            array[i+1] = key;
         }
     }
 
@@ -42,15 +25,26 @@ public class SelectionSort {
 
     public static void printArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ");
+            System.out.print(array[i] + ", ");
         }
         System.out.println();
     }
 
-    public static long testSelectionSort(int[] array) {
+    public static long testInsertionSort(int[] array) {
         long startTime, endTime;
         startTime = System.nanoTime();
-        selectionSort(array);
+        /* debug
+        if (array.length == 16) {
+            System.out.print("nosort: ");
+            printArray(array);
+        }*/
+        insertionSort(array);
+        /* debug
+        if (array.length == 16) {
+            System.out.print("sorted: ");
+            printArray(array);
+        }
+        */
         endTime   = System.nanoTime();
         return endTime - startTime;
     }
@@ -75,7 +69,7 @@ public class SelectionSort {
                 A[i] = randInteger(min, max);
             }
             // run the selection sorting
-            long duration = testSelectionSort(A);
+            long duration = testInsertionSort(A);
             // print stat
             System.out.println(arraySize + ": " + formatDecimal(nanoToSeconds(duration)));
         }

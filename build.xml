@@ -143,6 +143,12 @@
             <classpath refid="csc209.classpath"/>
         </java>
     </target>
+    <target name="lect03.InsertionSort">
+        <java classname="co.kulwadee.csc209.lect03.InsertionSort" 
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
     <target name="lect03.JCFListPerformance">
         <java classname="co.kulwadee.csc209.lect03.JCFListPerformance" 
             failonerror="true" fork="yes">
