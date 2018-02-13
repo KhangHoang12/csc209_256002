@@ -165,4 +165,54 @@
         </java>
     </target>
     <!-- END OF LECTURE 04 -->
+    <!-- LECTURE 05 -->
+    <target name="lect05.CountDown">
+        <java classname="co.kulwadee.csc209.lect05.CountDown" 
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <target name="lect05.Factorial">
+        <java classname="co.kulwadee.csc209.lect05.Factorial" 
+            failonerror="true" fork="yes">
+            <arg value="${arg0}"/>
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <target name="lect05.Fibonacci">
+        <java classname="co.kulwadee.csc209.lect05.Fibonacci" 
+            failonerror="true" fork="yes">
+            <arg value="${arg0}"/>
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <target name="lect05.Binary">
+        <java classname="co.kulwadee.csc209.lect05.Binary" 
+            failonerror="true" fork="yes">
+            <arg value="${arg0}"/>
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <target name="lect05.GCD">
+        <java classname="co.kulwadee.csc209.lect05.GCD" 
+            failonerror="true" fork="yes">
+            <arg value="${arg0}"/>
+            <arg value="${arg1}"/>
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <target name="lect05.NoX">
+        <java classname="co.kulwadee.csc209.lect05.NoX" 
+            failonerror="true" fork="yes">
+            <arg value="${arg0}"/>
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <target name="lect05.Count17">
+        <java classname="co.kulwadee.csc209.lect05.Count17" 
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <!-- END OF LECTURE 05 -->
 </project>
