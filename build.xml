@@ -214,5 +214,19 @@
             <classpath refid="csc209.classpath"/>
         </java>
     </target>
+    <target name="lect05.TowersOfHanoi">
+        <java classname="co.kulwadee.csc209.lect05.TowersOfHanoi" 
+            failonerror="true" fork="yes">
+            <arg value="${arg0}"/>
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <target name="lect05.AnimatedTowersOfHanoi">
+        <java classname="co.kulwadee.csc209.lect05.AnimatedTowersOfHanoi" 
+            failonerror="true" fork="yes">
+            <arg value="${arg0}"/>
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
     <!-- END OF LECTURE 05 -->
 </project>
