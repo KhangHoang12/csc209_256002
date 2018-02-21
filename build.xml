@@ -229,4 +229,12 @@
         </java>
     </target>
     <!-- END OF LECTURE 05 -->
+    <!-- LECTURE 06 -->
+    <target name="lect06.DoublyLinkedList">
+        <java classname="co.kulwadee.csc209.lect06.DoublyLinkedList" 
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <!-- END OF LECTURE 06 -->
 </project>
