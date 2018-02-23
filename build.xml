@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project basedir="." default="build" name="csc209">
     <property name="junit.output.dir" value="junit"/>
+    <property name="lect08.output.dir" value="output/lect08"/>
     <property name="target" value="1.8"/>
     <property name="source" value="1.8"/>
     <property name="debuglevel" value="source,lines,vars"/>
@@ -237,4 +238,14 @@
         </java>
     </target>
     <!-- END OF LECTURE 06 -->
+    <!-- LECTURE 08 -->
+    <target name="lect08.SortingExperiment">
+        <mkdir dir="${lect08.output.dir}"/>
+        <java classname="co.kulwadee.csc209.lect08.SortingExperiment"
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+            <redirector output="${lect08.output.dir}/soring.txt" alwayslog="true"/>
+        </java>
+    </target>
+    <!-- END OF LECTURE 08 -->
 </project>
