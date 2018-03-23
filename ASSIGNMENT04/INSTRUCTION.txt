@@ -1,0 +1,39 @@
+************************************
+CSC 209 Data Structures (SIT, KMUTT)
+Assignment #4: Dictionary Program
+************************************
+Design and implement a English-to-Thai dictionary program using Java programming language.
+
+- Dictionary file: You may use a dictionary file ('longdo_en_th.txt') provided with this assignment package.
+  The file consits of 1343 dictionary records. Each record contains <ENGLISH WORD> (KIND) <THAI TRANSLAtION>
+
+- Input: your program MUST receive an english word from keyboard input.
+   * before processing, your program must check whether the input is in correct type or not 
+     (e.g. only english alphabets are allowed). It is your job to specify appropriate sanity checking rules.
+     
+- Output: after receiving and validating input, your program must write a Thai translation in the following format.
+
+  $ java English2Thai
+
+    Please enter an English word: ad hoc <ENTER>
+    > Word type: adj
+    > Thai translation: เฉพาะกิจ
+
+    Please enter an English word: zippo
+    > Word type: <unknown>
+    > Thai translation: <unknown>
+
+  NOTE: use Ctrl-C to stop your program.
+
+- Submission: copy source code and all data files to your Dropbox folder (put it inside a new folder named SDICT).
+  
+   * CAUTION: Please copy only .java and .txt files. Do not put NetBeans or Eclipses or DrJava project files to 
+   * your Dropbox folder!.
+
+- Submission Deadline: April 15, 2018
+
+- Grading Criteria:
+
+* Program Correctness (whether your program confirms to the specification or not)       50%
+* Program Efficiency (Are you using appropriate data structures?, Code Quality)         50%
+
