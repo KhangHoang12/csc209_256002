@@ -248,4 +248,13 @@
         </java>
     </target>
     <!-- END OF LECTURE 08 -->
+    <!-- LECTURE 11 -->
+    <target name="lect11.BinaryHeap">
+        <mkdir dir="${lect11.output.dir}"/>
+        <java classname="co.kulwadee.csc209.lect11.BinaryHeap"
+            failonerror="true" fork="yes">
+            <classpath refid="csc209.classpath"/>
+        </java>
+    </target>
+    <!-- END OF LECTURE 08 -->
 </project>
